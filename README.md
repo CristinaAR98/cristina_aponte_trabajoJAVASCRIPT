@@ -1,43 +1,30 @@
-TRABAJO FINAL - JAVASCRIPT
-==========================
+# TRABAJO FINAL - JAVASCRIPT
 
-Nombre: Cristina Aponte
-Archivo entregado: cristina_aponte_trabajoJAVASCRIPT.zip
+**Nombre:** Cristina Aponte  
 
-Este proyecto consiste en el desarrollo de un sitio web completo utilizando HTML5, CSS3, JavaScript y plugins como jQuery y Leaflet, cumpliendo con los requisitos del ejercicio final del módulo.
+Este proyecto consiste en el desarrollo de un sitio web completo utilizando **HTML5, CSS3 y JavaScript**.
 
--------------------------------
-📂 ESTRUCTURA DEL PROYECTO:
--------------------------------
+## 📂 ESTRUCTURA DEL PROYECTO
+
 TRABAJOFINAL/
 ├── css/
 ├── js/
 ├── images/
 ├── views/
-│   ├── index.html
-│   ├── galeria.html
+│   ├── productos.html
 │   ├── presupuesto.html
 │   └── contacto.html
+└── index.html
 
-------------------------------------
-🌐 URL del sitio en Netlify:
-------------------------------------
-https://cristina-aponte-trabajojavascript.netlify.app/views/index.html
+## 🌐 URL en Netlify
+https://cristina-aponte-trabajojavascript.netlify.app/
 
-Puedes acceder al sitio web directamente desde la URL anterior. Se ha subido manualmente a Netlify siguiendo las especificaciones del enunciado.
+## 📝 INSTRUCCIONES
+- Abrir `index.html` desde la raíz del proyecto.
+- Navegar a las secciones desde el menú principal.
 
-------------------------------------
-📝 INSTRUCCIONES:
-------------------------------------
-- Descomprimir el archivo .zip entregado.
-- Abrir la carpeta `TRABAJOFINAL`.
-- Acceder a `views/index.html` para visualizar localmente.
-- O visitar la URL pública arriba indicada.
+## ✅ VALIDACIÓN
+- Formularios con pattern en email y teléfono.
+- HTML validado con W3C.
+- Navegación coherente.
 
-------------------------------------
-✅ VALIDACIÓN:
-------------------------------------
-- HTML validado con W3C Validator.
-- Estructura correcta en carpetas.
-- Código comentado y organizado.
-- Favicon funcional en todas las páginas.
