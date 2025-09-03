@@ -1,55 +1,54 @@
-# LEROY MERLEN - Soluciones Integrales para tu Espacio
+# CLEANED - Sitio Web de Productos y Servicios
 
-Sitio web desarrollado como ejercicio práctico del Máster en Programación Web. Este proyecto simula un sitio profesional para una tienda especializada en bricolaje, herramientas y productos de mejora del hogar.
+Sitio web desarrollado como proyecto práctico en HTML5, CSS3 y JavaScript. Este proyecto incluye catálogo de productos, formularios de contacto y presupuesto, y galería visual de productos.
 
 ---
 
 ## 🌐 Sitio Web Publicado
 
-🔗 [https://cristinaar98.github.io/cristina_aponte_trabajoHTML/](https://cristinaar98.github.io/cristina_aponte_trabajoHTML/)
+🔗 [https://cristina-aponte-trabajojavascript.netlify.app/](https://cristina-aponte-trabajojavascript.netlify.app/)
 
 ---
 
 ## 📁 Estructura del Proyecto
 
 - `index.html` — Página de inicio
-- `productos.html` — Catálogo de productos con galería visual
-- `presupuesto.html` — Formulario para solicitar presupuesto
-- `contacto.html` — Información de contacto
-- `css/` — Hojas de estilo del proyecto
+- `views/productos.html` — Catálogo de productos
+- `views/presupuesto.html` — Formulario de solicitud de presupuesto
+- `views/contacto.html` — Información de contacto y formulario
+- `css/` — Hojas de estilo
 - `js/` — Scripts de navegación y efectos
-- `images/` — Imágenes de productos, íconos y banners
+- `images/` — Imágenes de productos, iconos y banners
 - `README.md` — Documento explicativo del proyecto
 
 ---
 
 ## ✨ Funcionalidades
 
-- Menú con opción activa destacada según la página
-- Footer con bloques de redes sociales, enlaces legales, newsletter y contacto
-- Newsletter funcional y estilizada
-- Galería de productos con Lightbox y WOWSlider
-- Diseño responsive y consistente en todas las páginas
-- Scripts optimizados para una experiencia fluida
+- Menú con opción activa según la página
+- Footer con información de contacto y redes sociales
+- Formularios con validación de email y teléfono
+- Galería de productos con diseño uniforme y responsive
+- Diseño responsive para móviles y tablets
+- Experiencia de usuario fluida
 
 ---
 
 ## 🛠 Tecnologías Utilizadas
 
 - **HTML5** y **CSS3**
-- **JavaScript**, **jQuery**, **Bootstrap 3**
-- **Font Awesome**, **VisualLightBox**, **WOWSlider**
-- **GitHub Pages** como entorno de despliegue
+- **JavaScript**
+- **Netlify** para despliegue
 
 ---
 
 ## 👩‍💻 Autoría
 
 **Cristina Aponte**  
-Proyecto realizado para la asignatura de *Programación Web y Asignación de Dominios*
+Proyecto desarrollado como ejercicio práctico en programación web.
 
 ---
 
 ## ⚠️ Aviso
 
-Este sitio es un proyecto académico. No representa a la empresa real “Leroy Merlin”.
+Este sitio es un proyecto académico y no representa a ninguna empresa real.
