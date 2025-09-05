@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Limpieza, Servicio, Higiene, Mapas, Contacto, Vinagre ecológico">
+    <meta name="description" content="Better Clean - Servicios de limpieza profesional y ecológica con productos naturales">
+    <meta name="author" content="Better Clean">
+    <title>Better Clean - Contacto</title>
+    <link href="../css/base.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/png">
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/contacto.css">
+
+    <!-- Leaflet para el mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+    <!-- Iconos para dispositivos Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Iconos para diferentes tamaños en navegadores -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/logo.ico">
+
+    <!-- Archivo de manifest para Android y Chrome -->
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html" aria-label="Página de inicio Better Clean">
+                    <img src="../images/logo.png" alt="Logo Better Clean - Limpieza ecológica profesional" loading="lazy">
+                </a>
+            </div>
+
+            <!-- Navegación principal -->
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../views/productos.html">Productos</a></li>
+                    <li><a href="../views/presupuesto.html">Presupuesto</a></li>
+                    <li><a href="../views/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Contacto rápido -->
+            <div class="quick-contact">
+                <ul>
+                    <li>
+                        <a href="tel:+34986580894">
+                            <img src="../images/2.png" alt="Teléfono" loading="lazy">
+                            (+34) 986 580 894
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:cleaned@gmail.com">
+                            <img src="../images/1.png" alt="Email" loading="lazy">
+                            cleaned@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Banner -->
+        <section class="hero hero-products">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>CONTÁCTANOS</h1>
+                    <p class="lead">Estamos aquí para ayudarte. Completa el formulario o utiliza los medios de contacto proporcionados.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section class="contact-info">
+            <div class="container">
+                <h1>Contacto</h1>
+                <p>Estamos ubicados en:</p>
+                <address>
+                    <p><strong>Dirección:</strong> C/ Siador, 4 - 36547 Silleda (Pontevedra)</p>
+                    <p><strong>Email:</strong> <a href="mailto:cleaned@gmail.com">cleaned@gmail.com</a></p>
+                    <p><strong>Teléfono:</strong> <a href="tel:+34986580894">(+34) 986 580 894</a></p>
+                </address>
+
+                <!-- Mapa interactivo -->
+                <div id="map" style="height:450px; width:100%;"></div>
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section class="contact-form">
+            <div class="container">
+                <h2>Envíanos un mensaje</h2>
+                <p>Todos los campos con * son obligatorios.</p>
+
+                <form action="enviar_contacto.php" method="POST" novalidate>
+                    <!-- Nombre -->
+                    <div class="form-group">
+                        <label for="nombre_contacto">Nombre <span class="required">*</span>:</label>
+                        <input id="nombre_contacto" name="nombre_contacto" type="text" required
+                               pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,50}" 
+                               title="Solo letras y espacios, entre 2 y 50 caracteres"
+                               placeholder="Ingresa tu nombre">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email_contacto">Correo electrónico <span class="required">*</span>:</label>
+                        <input id="email_contacto" name="email_contacto" type="email" required
+                               placeholder="correo@dominio.com">
+                    </div>
+
+                    <!-- Teléfono -->
+                    <div class="form-group">
+                        <label for="telefono_contacto">Teléfono:</label>
+                        <input id="telefono_contacto" name="telefono_contacto" type="tel"
+                               pattern="^\+?[0-9\s]{7,15}$" 
+                               title="Solo números, opcionalmente con + al inicio"
+                               placeholder="+34 600 000 000">
+                    </div>
+
+                    <!-- Asunto -->
+                    <div class="form-group">
+                        <label for="asunto_contacto">Asunto <span class="required">*</span>:</label>
+                        <input id="asunto_contacto" name="asunto_contacto" type="text" required
+                               pattern=".{2,100}" 
+                               title="Debe contener entre 2 y 100 caracteres"
+                               placeholder="Asunto del mensaje">
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div class="form-group">
+                        <label for="mensaje_contacto">Mensaje <span class="required">*</span>:</label>
+                        <textarea id="mensaje_contacto" name="mensaje_contacto" rows="5" required
+                                  maxlength="500"
+                                  placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Enlaces rápidos -->
+      <div class="footer-col">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../views/productos.html">Productos</a></li>
+          <li><a href="../views/presupuesto.html">Presupuesto</a></li>
+          <li><a href="../views/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <address>
+          <p>C/ Siador, 4 - 36547 Silleda (Pontevedra)</p>
+          <p><a href="tel:+34986580894">(+34) 986 580 894</a></p>
+          <p><a href="mailto:cleaned@gmail.com">cleaned@gmail.com</a></p>
+        </address>
+      </div>
+
+      <!-- Newsletter y redes -->
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit" class="btn btn-secondary">Suscribirse</button>
+        </form>
+
+        <div class="social-links">
+          <a href="https://instagram.com" aria-label="Instagram"><img src="../images/instagram.svg" alt="Instagram"></a>
+          <a href="https://facebook.com" aria-label="Facebook"><img src="../images/facebook.svg" alt="Facebook"></a>
+          <a href="https://twitter.com" aria-label="Twitter"><img src="../images/twitter.svg" alt="Twitter"></a>
+          <a href="https://youtube.com" aria-label="Youtube"><img src="../images/youtube.svg" alt="Youtube"></a>
+          <a href="https://linkedin.com" aria-label="Linkedin"><img src="../images/linkedin.svg" alt="Linkedin"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Better Clean. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Inicializar mapa
+            var map = L.map('map').setView([42.7070, -8.2292], 15);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            L.marker([42.7070, -8.2292]).addTo(map)
+                .bindPopup('<b>Better Clean</b><br>C/ Siador, 4 - 36547 Silleda')
+                .openPopup();
+
+            // Año actual en footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
+
+</body>
+</html>
