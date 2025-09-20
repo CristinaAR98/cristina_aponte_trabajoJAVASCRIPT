@@ -8,6 +8,11 @@ Sitio web desarrollado como proyecto práctico en HTML5, CSS3 y JavaScript. Este
 
 🔗 [https://cristina-aponte-trabajojavascript.netlify.app/](https://cristina-aponte-trabajojavascript.netlify.app/)
 
+
+## 📂 Código Fuente
+
+🔗 [https://cristinaar98.github.io/cristina_aponte_trabajoJAVASCRIPT/](https://cristinaar98.github.io/cristina_aponte_trabajoJAVASCRIPT/)
+
 ---
 
 ## 📁 Estructura del Proyecto
