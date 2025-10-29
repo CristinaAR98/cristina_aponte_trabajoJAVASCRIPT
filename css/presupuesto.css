@@ -1,0 +1,71 @@
+/* ===== PRESUPUESTO ===== */
+
+
+.presupuesto {
+  padding: 4rem 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.presupuesto h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.presupuesto p {
+  margin-bottom: 2rem;
+}
+
+.presupuesto form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+  background: var(--light-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.presupuesto .form-group { display: flex; flex-direction: column; }
+.presupuesto label { font-weight: 600; margin-bottom: 0.5rem; }
+
+.presupuesto input,
+.presupuesto select,
+.presupuesto textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.presupuesto input:focus,
+.presupuesto select:focus,
+.presupuesto textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(17,76,125,0.3);
+}
+
+.presupuesto textarea { min-height: 140px; resize: vertical; }
+
+.presupuesto button {
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.presupuesto button:hover { background: var(--secondary-color); }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .presupuesto form { grid-template-columns: 1fr; }
+}

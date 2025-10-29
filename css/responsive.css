@@ -1,0 +1,62 @@
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+    .logo {
+        width: 150px; /* Ajusta el ancho del logo */
+    }
+
+    .wish-box {
+        width: 94.8%; /* Caja de deseos un poco más estrecha */
+    }
+
+    .mg {
+        height: 256px; /* Altura de una imagen o contenedor */
+    }
+}
+
+/*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
+@media (max-width: 767px) and (min-width: 600px) {
+    .logo {
+        width: 126px;
+    }
+
+    .wish-box {
+        width: 92%;
+    }
+
+    .mg {
+        height: 200px;
+    }
+
+    .three_box p {
+        font-size: 16px; /* Texto más pequeño en secciones */
+    }
+
+    .wellcome .wellcome-box {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
+@media (max-width: 599px) {
+    .logo {
+        width: 100px;
+    }
+
+    .wish-box {
+        width: 90%;
+    }
+
+    .three_box h1 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .three_box p {
+        font-size: 14px;
+    }
+
+    .copyright p {
+        font-size: 12px;
+    }
+}
