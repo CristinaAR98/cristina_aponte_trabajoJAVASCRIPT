@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ============================= -->
+  <!-- 🌿 SEO y Datos para Redes -->
+  <!-- ============================= -->
+  <title>Better Clean - Servicios de Limpieza Ecológica y Profesional</title>
+
+  <meta name="description" content="Better Clean ofrece servicios de limpieza ecológica y profesional con productos 100% naturales. Cuida tu hogar y el planeta.">
+  <meta name="keywords" content="Better Clean, limpieza ecológica, productos naturales, higiene, servicios de limpieza, vinagre ecológico, sostenibilidad">
+  <meta name="author" content="Better Clean">
+
+  <!-- Open Graph (para Facebook, LinkedIn, etc.) -->
+  <meta property="og:title" content="Better Clean - Limpieza Ecológica y Profesional">
+  <meta property="og:description" content="Productos y servicios de limpieza ecológicos. ¡Cuida tu hogar y el medio ambiente con Better Clean!">
+  <meta property="og:image" content="https://betterclean.com/images/logo.png">
+  <meta property="og:url" content="https://betterclean.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Better Clean - Limpieza Ecológica">
+  <meta name="twitter:description" content="Servicios y productos ecológicos para mantener tu hogar limpio y saludable.">
+  <meta name="twitter:image" content="https://betterclean.com/images/logo.png">
+
+  <!-- ============================= -->
+  <!-- 🎨 Estilos y Fuentes -->
+  <!-- ============================= -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- ============================= -->
+  <!-- 🖼️ Iconos y Favicon -->
+  <!-- ============================= -->
+  <link rel="icon" href="../images/logo.ico" type="image/x-icon">
+
+  <!-- ============================= -->
+  <!-- 🗺️ Librerías externas -->
+  <!-- ============================= -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+</head>
+
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container container">
+      <div class="logo">
+        <a href="index.html" aria-label="Página de inicio Better Clean">
+          <img src="./images/logo.png" alt="Logo Better Clean" loading="lazy" width="200">
+        </a>
+      </div>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="views/galeria.html">Galería</a></li>
+          <li><a href="views/presupuesto.html">Presupuesto</a></li>
+          <li><a href="views/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+       <div class="quick-contact">
+        <ul>
+          <li>
+            <a href="tel:+34986580894">
+              <img src="../images/2.png" alt="Teléfono" loading="lazy">
+              (+34) 986 580 894
+            </a>
+          </li>
+          <li>
+            <a href="mailto:cleaned@gmail.com">
+              <img src="../images/1.png" alt="Email" loading="lazy">
+              cleaned@gmail.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="title-white">Productos de Limpieza 100% Ecológicos</h1>
+
+      <p class="lead">Cuida tu hogar y el planeta con nuestras fórmulas naturales.</p>
+      <a href="views/galeria.html" class="btn btn-primary">Ver Productos</a>
+    </div>
+  </section>
+
+  <!-- Noticias -->
+  <section class="section" id="noticias">
+    <div class="container">
+      <h2 class="section-title">Últimas Noticias</h2>
+      <div id="noticias-container"></div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="section" id="testimonios">
+    <div class="container">
+      <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card testimonial">
+          <img src="./images/cliente1.jpg" alt="Cliente satisfecho" class="avatar" loading="lazy">
+          <blockquote>"El mejor limpiador que he probado, deja todo impecable sin químicos agresivos."</blockquote>
+          <p class="author">— Juan Pérez</p>
+        </div>
+        <div class="benefit-card testimonial">
+          <img src="./images/cliente2.jpg" alt="Cliente satisfecha" class="avatar" loading="lazy">
+          <blockquote>"Encantada con el concentrado, rinde muchísimo y huele delicioso."</blockquote>
+          <p class="author">— María García</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ubicación -->
+<section class="section" id="ubicacion">
+  <div class="container">
+    <h2 class="section-title">Dónde Estamos</h2>
+    <!-- Contenedor del mapa -->
+    <div id="map" role="region" aria-label="Mapa de ubicación de Better Clean" style="height: 400px;"></div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Enlaces Rápidos</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="views/galeria.html">Galería</a></li>
+            <li><a href="views/presupuesto.html">Presupuesto</a></li>
+            <li><a href="views/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contacto</h3>
+          <address>
+            <p>C/ Siador, 4 - 36547 Silleda (Pontevedra)</p>
+            <p><a href="tel:+34986580894">(+34) 986 580 894</a></p>
+            <p><a href="mailto:cleaned@gmail.com">cleaned@gmail.com</a></p>
+          </address>
+        </div>
+
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Tu correo electrónico" required aria-label="Correo electrónico">
+            <button type="submit" class="btn btn-secondary">Suscribirse</button>
+          </form>
+
+          <div class="social-links">
+            <a href="https://instagram.com" aria-label="Instagram"><img src="./images/instagram.svg" alt="Instagram"></a>
+            <a href="https://facebook.com" aria-label="Facebook"><img src="./images/facebook.svg" alt="Facebook"></a>
+            <a href="https://twitter.com" aria-label="Twitter"><img src="./images/twitter.svg" alt="Twitter"></a>
+            <a href="https://youtube.com" aria-label="Youtube"><img src="./images/youtube.svg" alt="Youtube"></a>
+            <a href="https://linkedin.com" aria-label="Linkedin"><img src="./images/linkedin.svg" alt="Linkedin"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Better Clean. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  
+ 
+<!-- JS Externo -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.min.js" defer></script>
+  <script src="../js/noticias.js" defer></script>
+  <script src="../js/mapa.js" defer></script>
+  
+
+  <script>
+    // Año actual en el footer
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    });
+  </script>
+
+
+</body>
+</html>
