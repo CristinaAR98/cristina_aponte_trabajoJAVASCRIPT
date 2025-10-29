@@ -329,3 +329,336 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <meta name="keywords" content="Limpieza, Servicio, Higiene, Mapas, Contacto, Vinagre ecológico">
+  <meta name="description" content="Better Clean - Servicios de limpieza profesional y ecológica con productos naturales">
+  <meta name="author" content="Better Clean">
+  <title>Better Clean - Solicitud de Presupuesto</title>
+
+  <!-- Open Graph (para redes sociales) -->
+  <meta property="og:title" content="Better Clean - Solicitud de Presupuesto">
+  <meta property="og:description" content="Solicita tu presupuesto personalizado para limpieza ecológica y profesional.">
+  <meta property="og:image" content="./images/logo.png">
+  <meta property="og:url" content="https://betterclean.com/presupuesto.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Better Clean - Solicitud de Presupuesto">
+  <meta name="twitter:description" content="Solicita tu presupuesto de limpieza ecológica con Better Clean.">
+  <meta name="twitter:image" content="./images/logo.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS unificado -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../images/logo.ico" type="image/x-icon">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+
+  <!-- Estilos específicos del formulario -->
+  <style>
+    .error {
+      color: red;
+      font-size: 0.9rem;
+      margin-top: 0.25rem;
+      display: block;
+    }
+    #total {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: var(--primary-color);
+      margin-top: 0.5rem;
+    }
+    .form-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    #descuentoInfo {
+      font-size: 0.9rem;
+      color: green;
+      margin-top: 0.25rem;
+    }
+  </style>
+</head>
+
+
+<body>
+<header class="header">
+  <div class="header-container container">
+    <div class="logo">
+      <a href="../index.html" aria-label="Página de inicio Better Clean">
+        <img src="../images/logo.png" alt="Logo Better Clean" loading="lazy" width="200" height="60">
+      </a>
+    </div>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../views/galeria.html">Galería</a></li>
+        <li><a href="../views/presupuesto.html" class="active">Presupuesto</a></li>
+        <li><a href="../views/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+     <div class="quick-contact">
+        <ul>
+          <li>
+            <a href="tel:+34986580894">
+              <img src="../images/2.png" alt="Teléfono" loading="lazy">
+              (+34) 986 580 894
+            </a>
+          </li>
+          <li>
+            <a href="mailto:cleaned@gmail.com">
+              <img src="../images/1.png" alt="Email" loading="lazy">
+              cleaned@gmail.com
+            </a>
+          </li>
+        </ul>
+      </div>
+  </div>
+</header>
+
+<main>
+<section class="hero hero-products">
+  <div class="container">
+    <div class="hero-content">
+       <h1 class="title-white">Presupuestos Personalizados</h1>
+      <p class="lead">En Better Clean, ofrecemos soluciones de limpieza adaptadas a tus necesidades</p>
+    </div>
+  </div>
+</section>
+
+<section class="presupuesto">
+<div class="container">
+<h2>Solicitud de Presupuesto</h2>
+<p>Todos los campos con * son obligatorios.</p>
+
+<form id="presupuestoForm">
+  <div class="form-group">
+    <label for="nombre">Nombre <span class="required">*</span>:</label>
+    <input id="nombre" name="nombre" type="text" placeholder="Ingresa tu nombre">
+    <span class="error" id="errorNombre" aria-live="polite"></span>
+  </div>
+
+  <div class="form-group">
+    <label for="apellidos">Apellidos <span class="required">*</span>:</label>
+    <input id="apellidos" name="apellidos" type="text" placeholder="Ingresa tus apellidos">
+    <span class="error" id="errorApellidos" aria-live="polite"></span>
+  </div>
+
+  <div class="form-group">
+    <label for="correo">Correo electrónico <span class="required">*</span>:</label>
+    <input id="correo" name="correo" type="email" placeholder="correo@dominio.com">
+    <span class="error" id="errorCorreo" aria-live="polite"></span>
+  </div>
+
+  <div class="form-group">
+    <label for="telefono">Teléfono <span class="required">*</span>:</label>
+    <input id="telefono" name="telefono" type="tel" placeholder="600000000">
+    <span class="error" id="errorTelefono" aria-live="polite"></span>
+  </div>
+
+  <div class="form-group">
+    <label for="servicio">Servicio <span class="required">*</span>:</label>
+    <select id="servicio" name="servicio">
+      <option value="">Selecciona un servicio</option>
+      <option value="domicilio">Limpieza a domicilio (€50)</option>
+      <option value="oficina">Limpieza de oficina (€100)</option>
+      <option value="comercial">Limpieza comercial (€120)</option>
+      <option value="industrial">Limpieza industrial (€150)</option>
+    </select>
+    <span class="error" id="errorServicio" aria-live="polite"></span>
+  </div>
+
+  <div class="form-group">
+    <label for="plazo">Plazo (meses):</label>
+    <input id="plazo" name="plazo" type="number" min="1" value="1">
+    <span id="descuentoInfo" aria-live="polite"></span>
+  </div>
+
+  <fieldset class="form-group">
+    <legend>Extras opcionales:</legend>
+    <div>
+      <input type="checkbox" id="urgencia" name="extras" value="urgencia">
+      <label for="urgencia">Urgencia (+€20)</label>
+    </div>
+    <div>
+      <input type="checkbox" id="materialesPremium" name="extras" value="materialesPremium">
+      <label for="materialesPremium">Materiales Premium (+€30)</label>
+    </div>
+    <div>
+      <input type="checkbox" id="transporte" name="extras" value="transporte">
+      <label for="transporte">Transporte (+€15)</label>
+    </div>
+  </fieldset>
+
+  <div class="form-group">
+    <label>Total del presupuesto:</label>
+    <p id="total" aria-live="polite">0€</p>
+  </div>
+
+  <div class="form-group">
+    <input type="checkbox" id="aceptar" required>
+    <label for="aceptar">Acepto las condiciones de privacidad *</label>
+  </div>
+
+  <div class="form-buttons">
+    <button type="submit">Enviar Solicitud</button>
+    <button type="button" id="resetForm">Resetear Formulario</button>
+  </div>
+</form>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../views/galeria.html">Galería</a></li>
+          <li><a href="../views/presupuesto.html">Presupuesto</a></li>
+          <li><a href="../views/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <address>
+          <p>C/ Siador, 4 - 36547 Silleda (Pontevedra)</p>
+          <p><a href="tel:+34986580894">(+34) 986 580 894</a></p>
+          <p><a href="mailto:cleaned@gmail.com">cleaned@gmail.com</a></p>
+        </address>
+      </div>
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Tu correo electrónico" required aria-label="Correo electrónico">
+          <button type="submit" class="btn btn-secondary">Suscribirse</button>
+        </form>
+        <div class="social-links">
+          <a href="https://instagram.com" aria-label="Instagram"><img src="../images/instagram.svg" alt="Instagram"></a>
+          <a href="https://facebook.com" aria-label="Facebook"><img src="../images/facebook.svg" alt="Facebook"></a>
+          <a href="https://twitter.com" aria-label="Twitter"><img src="../images/twitter.svg" alt="Twitter"></a>
+          <a href="https://youtube.com" aria-label="Youtube"><img src="../images/youtube.svg" alt="Youtube"></a>
+          <a href="https://linkedin.com" aria-label="Linkedin"><img src="../images/linkedin.svg" alt="Linkedin"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Better Clean. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+<script src="../js/script.js" defer></script>
+<script src="../js/presupuesto.js" defer></script>
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    const form = document.querySelector("#presupuestoForm");
+    const totalDisplay = document.querySelector("#total");
+    const descuentoInfo = document.querySelector("#descuentoInfo");
+    const servicioSelect = document.querySelector("#servicio");
+    const extrasCheckboxes = document.querySelectorAll("input[name='extras']");
+    const plazoInput = document.querySelector("#plazo");
+    const resetButton = document.querySelector("#resetForm");
+
+    const precios = {
+        servicio: { domicilio:50, oficina:100, comercial:120, industrial:150 },
+        extras: { urgencia:20, materialesPremium:30, transporte:15 }
+    };
+
+    function calcularTotal() {
+        let total = 0;
+        const servicio = servicioSelect.value;
+        if(servicio && precios.servicio[servicio]) total += precios.servicio[servicio];
+        extrasCheckboxes.forEach(extra => { if(extra.checked) total += precios.extras[extra.value]; });
+        const plazo = parseInt(plazoInput.value) || 1;
+        let descuento = 0;
+        if(plazo >= 12) descuento = 0.15;
+        else if(plazo >= 6) descuento = 0.10;
+        else if(plazo >= 3) descuento = 0.05;
+        total = total * (1 - descuento);
+        totalDisplay.textContent = `${total.toFixed(2)}€`;
+        descuentoInfo.textContent = descuento>0 ? `Descuento aplicado: ${descuento*100}%` : '';
+    }
+
+    function validarFormulario() {
+        let valido = true;
+        document.querySelectorAll(".error").forEach(e => e.textContent="");
+        const nombre = form.nombre.value.trim();
+        const apellidos = form.apellidos.value.trim();
+        const correo = form.correo.value.trim();
+        const telefono = form.telefono.value.trim();
+        const servicio = form.servicio.value;
+        const aceptar = document.querySelector("#aceptar").checked;
+
+        if(!nombre || !/^[A-Za-zÁÉÍÓÚáéíóúÑñ]{1,15}$/.test(nombre)) {
+            document.getElementById("errorNombre").textContent="Nombre inválido (solo letras, max 15)";
+            valido=false;
+        }
+        if(!apellidos || !/^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{1,40}$/.test(apellidos)) {
+            document.getElementById("errorApellidos").textContent="Apellidos inválidos (solo letras, max 40)";
+            valido=false;
+        }
+        if(!correo || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(correo)) {
+            document.getElementById("errorCorreo").textContent="Correo inválido";
+            valido=false;
+        }
+        if(!telefono || !/^\d{1,9}$/.test(telefono)) {
+            document.getElementById("errorTelefono").textContent="Teléfono inválido (solo números, max 9 dígitos)";
+            valido=false;
+        }
+        if(!servicio) { document.getElementById("errorServicio").textContent="Debe seleccionar un servicio"; valido=false; }
+        if(!aceptar) { alert("Debe aceptar las condiciones de privacidad"); valido=false; }
+        return valido;
+    }
+
+    servicioSelect.addEventListener("change", calcularTotal);
+    extrasCheckboxes.forEach(extra => extra.addEventListener("change", calcularTotal));
+    plazoInput.addEventListener("input", calcularTotal);
+    form.addEventListener("input", calcularTotal);
+
+    form.addEventListener("submit", e => {
+        e.preventDefault();
+        if(validarFormulario()){
+            alert(`Formulario enviado correctamente.\nTotal: ${totalDisplay.textContent}`);
+            form.reset();
+            calcularTotal();
+        }
+    });
+
+    resetButton.addEventListener("click", () => {
+        form.reset();
+        calcularTotal();
+        document.querySelectorAll(".error").forEach(e => e.textContent="");
+    });
+
+    calcularTotal();
+});
+</script>
+</body>
+</html>
+
