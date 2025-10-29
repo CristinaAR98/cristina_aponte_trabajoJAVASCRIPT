@@ -1,0 +1,88 @@
+{
+  "productos": [
+    {
+      "nombre": "Vinagre Clásico",
+      "descripcion": "Vinagre ecológico 100% natural.",
+      "precio": "5,95€ / 1L",
+      "imagen": "../images/clasico",
+      "badge": "Nuevo"
+    },
+    {
+      "nombre": "Vinagre Cítricos",
+      "descripcion": "Vinagre con aroma natural a cítricos para limpieza y hogar.",
+      "precio": "6,95€ / 1L",
+      "imagen": "../images/citricos",
+      "badge": ""
+    },
+    {
+      "nombre": "Vinagre Hierbas",
+      "descripcion": "Vinagre aromatizado con extracto de hierbas naturales.",
+      "precio": "7,50€ / 1L",
+      "imagen": "../images/hierbas",
+      "badge": ""
+    },
+    {
+      "nombre": "Kit Completo",
+      "descripcion": "Kit de limpieza ecológica con vinagre y accesorios reutilizables.",
+      "precio": "19,95€ / Kit",
+      "imagen": "../images/kit",
+      "badge": "Más vendido"
+    },
+    {
+      "nombre": "Vinagre Menta",
+      "descripcion": "Vinagre con esencia fresca de menta natural.",
+      "precio": "6,75€ / 1L",
+      "imagen": "../images/menta",
+      "badge": ""
+    },
+    {
+      "nombre": "Vinagre Concentrado",
+      "descripcion": "Bidón de vinagre concentrado para uso profesional o industrial.",
+      "precio": "14,95€ / 5L",
+      "imagen": "../images/concentrado",
+      "badge": "PRO"
+    },
+    {
+      "nombre": "Vinagre Lavanda",
+      "descripcion": "Vinagre perfumado con suave aroma de lavanda.",
+      "precio": "6,95€ / 1L",
+      "imagen": "../images/lavanda",
+      "badge": ""
+    },
+    {
+      "nombre": "Vinagre Romero",
+      "descripcion": "Vinagre con extracto natural de romero para limpieza y hogar.",
+      "precio": "7,25€ / 1L",
+      "imagen": "../images/romero",
+      "badge": ""
+    },
+    {
+      "nombre": "Vinagre Árbol de Té",
+      "descripcion": "Vinagre con aceite de árbol de té, ideal para limpieza antibacteriana.",
+      "precio": "8,25€ / 1L",
+      "imagen": "../images/arbol",
+      "badge": ""
+    },
+    {
+      "nombre": "Kit Hogar",
+      "descripcion": "Kit completo de limpieza para el hogar con vinagres y paños ecológicos.",
+      "precio": "24,95€ / Kit",
+      "imagen": "../images/kitpanos",
+      "badge": ""
+    },
+    {
+      "nombre": "Vinagre Lavanda Limón",
+      "descripcion": "Vinagre aromatizado con esencia de lavanda y limón, ideal para limpieza y frescura.",
+      "precio": "7,50€ / 1L",
+      "imagen": "../images/lavandalimon",
+      "badge": "Nuevo"
+    },
+    {
+      "nombre": "Kit Oficina",
+      "descripcion": "Kit de limpieza ecológica para oficinas y espacios de trabajo, incluye paños y vinagres especiales.",
+      "precio": "21,95€ / Kit",
+      "imagen": "../images/kitoficina",
+      "badge": ""
+    }
+  ]
+}
